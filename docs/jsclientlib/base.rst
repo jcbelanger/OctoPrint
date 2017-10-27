@@ -172,7 +172,6 @@
    :param string url: URL against which to make the request, relative to base url or absolute
    :param string data: Data to post as request body
    :param object opts: Additional options for the request
-   :param object opts: Additional options for the request
    :returns Promise: A `jQuery Promise <http://api.jquery.com/Types/#Promise>`_ for the request's response
 
 .. js:function:: OctoPrintClient.postJson(url, data, opts)
