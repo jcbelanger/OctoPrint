@@ -164,14 +164,13 @@
    .. code-block:: javascript
 
       var url = OctoPrint.getBlueprintUrl("myplugin") + "endpoint";
-      OctoPrint.post(url, "a whole lot of data", {"contentType": "application/octet-stream"})
+      OctoPrint.post(url, "a whole lot of data", {headers: {"contentType": "application/octet-stream"}})
           .done(function(response) {
               // do something with the response
           });
 
    :param string url: URL against which to make the request, relative to base url or absolute
    :param string data: Data to post as request body
-   :param object opts: Additional options for the request
    :param object opts: Additional options for the request
    :returns Promise: A `jQuery Promise <http://api.jquery.com/Types/#Promise>`_ for the request's response
 
